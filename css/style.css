@@ -3,9 +3,7 @@
     box-sizing: border-box;
     --red: #0ed2f7;
     --white: #F1FAEE;
-    --light-blue: #A8DADC;
-    --blue: #457B9D;
-    --dark-blue: #1D3557;
+
 }
 
 body {
@@ -24,7 +22,7 @@ html {
 }
 
 .navigation nav {
-    margin: 25px;
+    margin: 0 25px;
 }
 
 .navigation nav ul{
@@ -33,7 +31,7 @@ html {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin: 25px 28px;
+    margin: 20px 0;
     /* padding: 12px; */
 }
 
@@ -73,6 +71,14 @@ html {
 
 .navigation nav ul li a:hover {
      color: #0ed2f7;
+}
+
+.navigation nav ul li .productos-selected{
+    color: #0ed2f7;
+}
+
+.navigation nav ul li .contacto-selected{
+    color: #0ed2f7;
 }
 
 .navigation nav ul li:first-child {
@@ -133,9 +139,12 @@ html {
     --animate-duration: 1s;
 }
 
+
+
 .main-text h1 .ride {
     margin-left: -5px;
     color: #0ed2f7;
+
 }
 
 .main-text h2 {
