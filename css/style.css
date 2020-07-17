@@ -258,3 +258,57 @@ table .table-premio{
         
     }
 }
+
+/* Contacto */
+
+.container-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 50vh;
+    margin-top: 120px;
+  }
+  
+  input[type=text] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    box-shadow:0 0 25px 8px rgba(0,0,0,0.06);
+  }
+  
+  form select {
+    padding:  10px;
+  }
+  
+  .border-customized-input {
+     border: 2px solid #eee;
+     border-radius:10px;
+  }
+  
+  textarea {
+    width: 450px;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    height:150px;
+  }
+
+  .label-style {
+      margin: 5px 0;
+  }
+
+  .select-style {
+      margin: 25px 0;
+  }
+
+  /* Google Map */
+
+ .google-map {
+     margin: 45px 0;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+ }
