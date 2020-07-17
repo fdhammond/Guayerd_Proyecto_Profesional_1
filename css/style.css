@@ -1,9 +1,9 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    --red: #0ed2f7;
+    --blue-light: #0ed2f7;
     --white: #F1FAEE;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +44,6 @@ html {
 }
 
 
-
 .brand {
     display: flex;
     align-items: center;
@@ -70,15 +69,15 @@ html {
 }
 
 .navigation nav ul li a:hover {
-     color: #0ed2f7;
+     color: var(--blue-light);
 }
 
 .navigation nav ul li .productos-selected{
-    color: #0ed2f7;
+    color: var(--blue-light);
 }
 
 .navigation nav ul li .contacto-selected{
-    color: #0ed2f7;
+    color: var(--blue-light);
 }
 
 .navigation nav ul li:first-child {
@@ -113,13 +112,31 @@ html {
 .home-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     text-align: justify;
+    align-self: center;
+    width: 80em;
+    margin-left: 20em;
+}
+
+.animation p {
+    margin-top: 25px; 
+    width: 200px;
+    font-family: 'Roboto';
+    font-size: 18px;
 }
 
 .home-info h3 {
     font-size: 28px;
     margin: 25px 12px;
-    color: var(--red);
+    color: var(--blue-light);
+    
+}
+
+.margin-title h3{
+    margin-top: 75px;
 }
 
 .home-info p {
@@ -129,6 +146,7 @@ html {
 
 
 .main-text{
+    margin-top: 145px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -143,7 +161,7 @@ html {
 
 .main-text h1 .ride {
     margin-left: -5px;
-    color: #0ed2f7;
+    color: var(--blue-light);
 
 }
 
@@ -152,77 +170,16 @@ html {
 }
 
 
-/* Productos */
-
-.productos-titulo {
-    margin-top: 35px;
-}
-
-.container-box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;  
-}
-
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 34px;
-    margin-bottom: 45px;   
-}
-
-.box img {
-    max-width: 400px;
-    height: auto;
-}
-
-.box .producto-imagen {
-    flex: 1;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.producto-texto {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    min-width: 400px;
-    height: auto;
-    flex-direction: column;
-    text-align: justify;
-    padding: 0 25px;
-}
-
-.producto-texto p {
-    max-width: 400px;
-    margin-top: 18px;
-}
-
-@media (max-width: 900px){
-    .producto-texto {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-top: 25px;
-    }
-} 
-
-
-/* Table */
-.premios {
+.premios h2{
     font-size: 28px;
-    margin: 25px 12px;
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: center;
+    color: var(--blue-light);
 }
 
 table {
     display: flex;
-    margin-top: 25px;
     justify-content: center;
     align-content: center;
     border-collapse: collapse;
@@ -230,8 +187,10 @@ table {
     margin-bottom: 45px; 
 }
 
-table .table-premio{
-    width: 100%;       
+.table-premio{
+    width: 100%;  
+    margin-top: 5em;
+    margin-bottom: 8em;     
 }
 
 
@@ -258,6 +217,80 @@ table .table-premio{
         
     }
 }
+
+
+/* Productos */
+
+.productos-title {
+    font-family: 'Roboto';
+    margin-top: 5em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    color: var(--blue-light);
+    font-size: 20px;
+}
+
+.container-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34px;
+    margin-bottom: 45px;   
+}
+
+.box img {
+    max-width: 600px;
+    height: auto;
+}
+
+.box .producto-imagen {
+    flex: 1;
+    width: 600px;
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.producto-texto {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 400px;
+    height: auto;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0 25px;
+    margin-top: 6em;
+}
+
+.producto-texto p {
+    max-width: 400px;
+    font-family: 'Roboto';
+}
+
+@media (max-width: 900px){
+    .producto-texto {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 25px;
+    }
+} 
+
+.producto-bottom {
+    margin-bottom: 5em;
+}
+
 
 /* Contacto */
 
@@ -307,7 +340,8 @@ table .table-premio{
   /* Google Map */
 
  .google-map {
-     margin: 45px 0;
+     margin-top: 45px;
+     margin-bottom: 5em;
      display: flex;
      justify-content: center;
      align-content: center;

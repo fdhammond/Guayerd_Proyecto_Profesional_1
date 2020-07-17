@@ -30,9 +30,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-    <title>Proyecto Profesional</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Contacto | Guayerd Bikes - Bicicletas de Competición y Urbanas.</title>
 </head>
 
 <body>
@@ -40,28 +40,30 @@
     <div class="navigation">
         <nav>
             <ul>
-                <li><span class="brand"><a href="index.html"><img src="img/bike.gif" alt=""></a><a
+                <li><span class="brand"><a href="index.html"><img src="img/bike.gif" alt="bike" onmouseover="moveElement(this)"></a><a
                             href="index.html">Guayerd Bikes</a></span></li>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="contacto.html" class="contacto-selected">CONTACTO</a></li>
+                <li onmouseover="moveElement(this)"><a href="index.html">HOME</a></li>
+                <li onmouseover="moveElement(this)"><a href="productos.html">PRODUCTOS</a></li>
+                <li onmouseover="moveElement(this)"><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="contacto-title">
-        CONTACTO
+    <div class="productos-title" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" data-aos-delay="350" data-aos-duration="1000">
+        <h2>CONTACTO</h2>
     </div>
 
-    <div class="container-form">
+    <div class="container-form" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">
 
         <div id="form-box">
 
             <form action="https://www.google.com/" method="post">
 
-
+            <div class="label-style">
                 <label for="post" class="label-style">Nombre</label>
-
+            </div>
 
                 <input type="text" class="signup-text-input border-customized-input" />
 
@@ -88,14 +90,42 @@
         </div>
     </div>
 
-    <div class="google-map">
+    <div class="productos-title" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" data-aos-delay="350" data-aos-duration="1000">
+        <h2>MAPA</h2>
+    </div>
+
+    <div class="google-map" data-aos="zoom-in-up"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" data-aos-delay="350" data-aos-duration="1000">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5123452907283!2d-58.45006848477063!3d-34.59120378046264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f12e398ecd%3A0x98abf435fbfab70!2sAv.%20Corrientes%206237%2C%20C1427BPA%20CABA!5e0!3m2!1ses-419!2sar!4v1594945724129!5m2!1ses-419!2sar"
             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
     </div>
 
+    <script>
 
+        function moveElement(elem) {
+            // get all 'a' elements
+            var a = document.getElementsByTagName('a');
+            // loop through all 'a' elements
+            for (i = 0; i < a.length; i++) {
+                // Remove the class 'active' if it exists
+                a[i].classList.remove('bad')
+            }
+            // add 'active' classs to the element that was clicked
+            elem.classList.add('animate__animated');
+            elem.classList.add('animate__bounce');
+        }
+        
+        </script>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>

@@ -30,9 +30,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-    <title>Proyecto Profesional</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Nuestras Bicis | Guayerd Bikes - Bicicletas de Competición y Urbanas.</title>
 </head>
 
 <body>
@@ -40,21 +40,23 @@
     <div class="navigation">
         <nav>
             <ul>
-                <li><span class="brand"><a href="index.html"><img src="img/bike.gif" alt=""></a><a
+                <li><span class="brand"><a href="index.html"><img src="img/bike.gif" alt="bike" onmouseover="moveElement(this)"></a><a
                             href="index.html">Guayerd Bikes</a></span></li>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="productos.html" class="productos-selected">PRODUCTOS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li onmouseover="moveElement(this)"><a href="index.html">HOME</a></li>
+                <li onmouseover="moveElement(this)"><a href="productos.html">PRODUCTOS</a></li>
+                <li onmouseover="moveElement(this)"><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="productos-title">
-        PRODUCTOS
+    <div class="productos-title" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" data-aos-delay="350" data-aos-duration="1000">
+        <h2>PRODUCTOS</h2>
     </div>
 
     <div class="container-box">
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="3000">
             <div class="producto-imagen">
                 <img src="./img/producto-1.jpg" alt="">
             </div>
@@ -70,7 +72,7 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="3000">
             <div class="producto-imagen">
                 <img src="./img/producto-2.jpeg" alt="">
             </div>
@@ -87,8 +89,8 @@
         </div>
 
 
-        <div class="box">
-            <div class="producto-imagen">
+        <div class="box" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="3000">
+            <div class="producto-imagen producto-bottom">
                 <img src="./img/producto-3.jpg" alt="">
             </div>
             <div class="producto-texto">
@@ -104,7 +106,27 @@
         </div>
     </div>
 
+    <script>
 
+        function moveElement(elem) {
+            // get all 'a' elements
+            var a = document.getElementsByTagName('a');
+            // loop through all 'a' elements
+            for (i = 0; i < a.length; i++) {
+                // Remove the class 'active' if it exists
+                a[i].classList.remove('bad')
+            }
+            // add 'active' classs to the element that was clicked
+            elem.classList.add('animate__animated');
+            elem.classList.add('animate__bounce');
+        }
+        
+        </script>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>

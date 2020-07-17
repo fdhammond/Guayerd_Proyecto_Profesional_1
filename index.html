@@ -30,9 +30,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-    <title>Proyecto Profesional</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Guayerd Bikes - Bicicletas de Competición y Urbanas.</title>
 </head>
 
 <body>
@@ -40,33 +40,38 @@
     <div class="navigation">
         <nav>
             <ul>
-                <li><span class="brand"><a href="index.html"><img src="img/bike.gif" alt=""></a><a
+                <li><span class="brand"><a href="index.html"><img src="img/bike.gif" alt="bike" onmouseover="moveElement(this)"></a><a
                             href="index.html">Guayerd Bikes</a></span></li>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li onmouseover="moveElement(this)"><a href="index.html">HOME</a></li>
+                <li onmouseover="moveElement(this)"><a href="productos.html">PRODUCTOS</a></li>
+                <li onmouseover="moveElement(this)"><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </div>
 
-    <!-- class="animate__animated animate__backInLeft animate__delay-3s" -->
+
 
     <div class="background-image">
         <img src="img/background4.png" alt="" class="animate__animated animate__backInLeft animate__delay-.5s">
 
-        <div class="main-text">
-            <h1 class="animate__animated animate__backInDown animate__delay-1s">DISFRUTA NUEVAS</h1>
-            <h1 class="animate__animated animate__backInDown animate__delay-1s"><span class="ride">EXPERIENCIAS</span>
-                <h2 class="animate__animated animate__backInDown animate__delay-1s">SINCE 1947 ®</h2>
+        <div class="main-text animate__animated animate__backInDown animate__delay-1s" onmouseover="moveElement(this)">
+            <div class="animation" onmouseover="moveElement(this)">
+            <h1 >DISFRUTA NUEVAS</h1>
+            <h1><span class="ride">EXPERIENCIAS</span>
+                <h2>SINCE 1947 ®</h2>
+                <p>Bill Jobs (1947-2003) fue el fundador de Guayerd Bikes. Un auténtico visionario que decidió
+                    dedicar su vida a la bicicleta después de un viaje a EE.UU en los ’70.</p>
             </h1>
-
+        </div>
         </div>
 
     </div>
 
 
 
-    <div class="home-info">
+    <div class="home-info" data-aos="fade-right" data-aos-delay="250" data-aos-duration="3000">
+
+        <div>
 
         <h3>Guayerd Bikes</h3>
         <p>Bill Jobs (1947-2003) fue el fundador de Guayerd Bikes. Un auténtico visionario que decidió
@@ -92,6 +97,9 @@
             producción anual total de más de 3 millones de bicicletas, producidas en las fábricas de
             Argentina y China.</p>
 
+        <div class="margin-title">
+        <div data-aos="fade-left" data-aos-delay="250" data-aos-duration="3000">
+       
         <h3>Innovación</h3>
         <p>La historia de cada bicicleta GUAYERD empieza sólo a 100km del lugar donde la historia de
             la bicicleta comenzó en 1817. Justo a las afueras de Stuttgart, corazón de Alemania en
@@ -115,7 +123,9 @@
             vida en la bicicleta, sino que cada una de las personas involucradas en el proceso de
             fabricación ha velado para que una genuina bicicleta se haya fabricado con el mayor
             cuidado posible.</p>
-
+        </div>    
+        
+        <div data-aos="fade-right" data-aos-delay="250" data-aos-duration="3000">
         <h3>Bicis</h3>
         <p>Allí, nuestros expertos debaten y revisan con los especialistas taiwaneses cada paso: desde
             el primer prototipo hasta el modelo de serie perfectamente acabado. Cada bicicleta que sale
@@ -138,7 +148,9 @@
             mejor conocemos nuestra marca, la calidad de nuestros productos y el desarrollo que
             implican y por ello GUAYERD ofrece garantía de por vida en todos sus cuadros, porque
             nadie confía en nuestras bicicletas más que nosotros.</p>
+        </div>
 
+        <div data-aos="fade-left" data-aos-delay="250" data-aos-duration="3000">
         <h3>Más Éxitos</h3>
         <p>Durante más de una década, GUAYERD ha sido el principal patrocinador del MULTIVAN
             GUAYERD BIKING TEAM, con el que se han obtenido éxitos a nivel internacional y en 2013
@@ -158,9 +170,13 @@
             los conocimientos de Franco y todo su equipo de ingenieros, además de toda la experiencia
             de profesionales como Sandro Guzmán, Pepe Sánchez o Rui Costa JR. Su éxito es nuestra
             motivación.</p>
+        </div>
+        </div>
+        </div>
     </div>
 
-    <h3 class="premios">Premios</h3>
+<div class="premios" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1000">
+    <h2>Premios</h2>
     <div class="table-premio">
         <table>
             <tr>
@@ -190,8 +206,30 @@
         </table>
     </div>
     </div>
+</div>
 
 
+<script>
+
+function moveElement(elem) {
+    // get all 'a' elements
+    var a = document.getElementsByTagName('a');
+    // loop through all 'a' elements
+    for (i = 0; i < a.length; i++) {
+        // Remove the class 'active' if it exists
+        a[i].classList.remove('bad')
+    }
+    // add 'active' classs to the element that was clicked
+    elem.classList.add('animate__animated');
+    elem.classList.add('animate__bounce');
+}
+
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
