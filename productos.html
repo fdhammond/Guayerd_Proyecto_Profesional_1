@@ -4,9 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Guayerd Bikes">
+    <meta name="description"
+        content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Guayerd">
+    <meta property="og:description"
+        content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Guayerd">
+    <meta property="twitter:description"
+        content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <title>Proyecto Profesional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon"
+        href="https://res.cloudinary.com/dzkqopnby/image/upload/v1595106967/guayerd_proyecto_1/bike_oo9o84.ico"
+        type="ico">
+    <title>Guayerd Bikes - Bicicletas de Competición y Urbanas.</title>
 </head>
 
 <body>
@@ -14,22 +43,27 @@
     <div class="navigation">
         <nav>
             <ul>
-                <li><span class="brand"><a href="index.html">Guayerd Bikes</a></span></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><span class="brand"><a href="index.html"><img
+                                src="https://res.cloudinary.com/dzkqopnby/image/upload/v1594957034/guayerd_proyecto_1/bike_b0mquj.gif"
+                                alt="bike" onmouseover="moveElement(this)"></a><a href="index.html">Guayerd
+                            Bikes</a></span></li>
+                <li onmouseover="moveElement(this)"><a href="index.html">HOME</a></li>
+                <li onmouseover="moveElement(this)"><a href="productos.html">PRODUCTOS</a></li>
+                <li onmouseover="moveElement(this)"><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="productos-titulo">
-        <h1>Productos</h1>
+    <div class="productos-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+        data-aos-delay="350" data-aos-duration="1000">
+        <h2>PRODUCTOS</h2>
     </div>
 
     <div class="container-box">
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="3000">
             <div class="producto-imagen">
-                <img src="./img/producto-1.jpg" alt="">
+                <img src="https://res.cloudinary.com/dzkqopnby/image/upload/v1594957038/guayerd_proyecto_1/producto-1_jjr8ci.jpg"
+                    alt="">
             </div>
             <div class="producto-texto">
                 <h3>Urbana Crossway 40</h3>
@@ -43,9 +77,10 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="3000">
             <div class="producto-imagen">
-                <img src="./img/producto-2.jpeg" alt="">
+                <img src="https://res.cloudinary.com/dzkqopnby/image/upload/v1594957030/guayerd_proyecto_1/producto-2_dg3afi.jpg"
+                    alt="">
             </div>
             <div class="producto-texto">
                 <h3>Urbana Crossway 40</h3>
@@ -60,9 +95,10 @@
         </div>
 
 
-        <div class="box">
-            <div class="producto-imagen">
-                <img src="./img/producto-3.jpg" alt="">
+        <div class="box" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="3000">
+            <div class="producto-imagen producto-bottom">
+                <img src="https://res.cloudinary.com/dzkqopnby/image/upload/v1594957034/guayerd_proyecto_1/producto-3_osozim.jpg"
+                    alt="">
             </div>
             <div class="producto-texto">
                 <h3>Urbana Crossway 40</h3>
@@ -77,6 +113,74 @@
         </div>
     </div>
 
+    <div class="back-to-top">
+        <a class="top-link hide" href="" id="js-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+                <path d="M12 6H0l6-6z" /></svg>
+            <span class="screen-reader-text"></span>
+        </a>
+    </div>
+
+    <script>
+
+        function moveElement(elem) {
+            // get all 'a' elements
+            var a = document.getElementsByTagName('a');
+            // loop through all 'a' elements
+            for (i = 0; i < a.length; i++) {
+                // Remove the class 'active' if it exists
+                a[i].classList.remove('bad')
+            }
+            // add 'active' classs to the element that was clicked
+            elem.classList.add('animate__animated');
+            elem.classList.add('animate__bounce');
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        // Set a variable for our button element.
+        const scrollToTopButton = document.getElementById('js-top');
+
+        // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+        const scrollFunc = () => {
+            // Get the current scroll value
+            let y = window.scrollY;
+
+            // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+            if (y > 400) {
+                scrollToTopButton.className = "top-link show";
+            } else {
+                scrollToTopButton.className = "top-link hide";
+            }
+        };
+
+        window.addEventListener("scroll", scrollFunc);
+
+        const scrollToTop = () => {
+            // Variable para ambos
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+            // Si el numero es mayor a 0 volvemos a 0, esta la animacion con el comando requestAnimationFrame
+            if (c > 0) {
+                window.requestAnimationFrame(scrollToTop);
+
+                // Lo de abajo hace mas smooth el scrolleo para top
+                window.scrollTo(0, c - c / 10);
+            }
+        };
+
+        // triggerea la funcion scrollToTop
+        scrollToTopButton.onclick = function (e) {
+            e.preventDefault();
+            scrollToTop();
+        }
+    </script>
 
 </body>
 
