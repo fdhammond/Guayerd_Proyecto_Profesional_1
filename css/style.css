@@ -2,6 +2,16 @@
     margin: 0;
     box-sizing: border-box;
     --blue-light: #0ed2f7;
+<<<<<<< HEAD
+=======
+    --white: #F1FAEE;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F3F3F4;
+    font-family: 'Roboto';
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
 }
 
 body {
@@ -9,8 +19,13 @@ body {
     font-family: 'Roboto';
 }
 
+<<<<<<< HEAD
 
 .navigation {
+=======
+.navigation {
+    font-family: 'Lato', sans-serif;
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
     background-color: black;
     margin: 25px 25px;
 }
@@ -26,10 +41,17 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin: 20px 0;
+<<<<<<< HEAD
 }
 
 .navigation nav ul li {
     flex-wrap: wrap;
+=======
+    /* padding: 12px; */
+}
+
+.navigation nav ul li {
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
     font-size: 14px;
     list-style: none;
     text-decoration: none;
@@ -42,7 +64,10 @@ body {
     display: flex;
     align-items: center;
     font-weight: bold;
+<<<<<<< HEAD
     margin-left: -50px;
+=======
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
 }
 
 .navigation nav ul img {
@@ -102,6 +127,7 @@ body {
   max-height: auto;
   --animate-duration: 1s;
   margin-top: -5px;
+<<<<<<< HEAD
   margin-left: 75px;
 }
 
@@ -147,7 +173,27 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+=======
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
     text-align: justify;
+    align-self: center;
+    width: 80em;
+    margin-left: 20em;
+}
+
+.animation p {
+    margin-top: 25px; 
+    width: 200px;
+    font-family: 'Roboto';
+    font-size: 18px;
 }
 
 .animation p {
@@ -158,8 +204,18 @@ body {
 
 .home-info h3 {
     font-size: 28px;
+<<<<<<< HEAD
     margin: 2em 0 1em 0;
     color: var(--blue-light); 
+=======
+    margin: 25px 12px;
+    color: var(--blue-light);
+    
+}
+
+.margin-title h3{
+    margin-top: 75px;
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
 }
 
 
@@ -169,6 +225,34 @@ body {
 
 /* Table */ 
 
+<<<<<<< HEAD
+=======
+.main-text{
+    margin-top: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: initial;
+    margin-left: 150px;
+    margin-bottom: 450px;
+    font-family: 'Josefin Sans', sans-serif;
+    --animate-duration: 1s;
+}
+
+
+
+.main-text h1 .ride {
+    margin-left: -5px;
+    color: var(--blue-light);
+
+}
+
+.main-text h2 {
+    margin-top: 12px;
+}
+
+
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
 .premios h2{
     font-size: 28px;
     margin-top: 3.5em;
@@ -223,6 +307,10 @@ table {
 .productos-title {
     font-family: 'Roboto';
     margin-top: 5em;
+<<<<<<< HEAD
+=======
+    margin-bottom: 2em;
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
     margin-left: 5em;
     color: var(--blue-light);
     font-size: 20px;
@@ -298,18 +386,27 @@ table {
     justify-content: center;
     align-content: center;
     height: 50vh;
+<<<<<<< HEAD
     margin-top: 70px;
+=======
+    margin-top: 120px;
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
   }
   
   input[type=text] {
     padding: 10px;
     margin: 10px 0;
     border: 0;
+<<<<<<< HEAD
     box-shadow: 6px 6px 4px rgba(0,0,0,0.06);
+=======
+    box-shadow:0 0 25px 8px rgba(0,0,0,0.06);
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
   }
   
   form select {
     padding:  10px;
+<<<<<<< HEAD
     padding:15px;
     border-radius:15px;
     border:0;
@@ -319,12 +416,15 @@ table {
   select:hover {
     background-color: var(--blue-light);
     color: white;
+=======
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
   }
   
   .border-customized-input {
      border: 2px solid #eee;
      border-radius:10px;
   }
+<<<<<<< HEAD
   input:focus,
 select:focus,
 textarea:focus,
@@ -333,6 +433,8 @@ button:focus {
     border: 2px solid var(--blue-light);
 }
 
+=======
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
   
   textarea {
     width: 450px;
@@ -340,8 +442,13 @@ button:focus {
     padding:15px;
     border-radius:15px;
     border:0;
+<<<<<<< HEAD
     box-shadow: 6px 6px 4px rgba(0,0,0,0.06);
     height:200px;
+=======
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    height:150px;
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
   }
 
   .label-style {
@@ -354,6 +461,7 @@ button:focus {
 
   /* Google Map */
 
+<<<<<<< HEAD
   .contacto-title {
     display: flex;
     justify-content: center;
@@ -366,10 +474,15 @@ button:focus {
 
  .google-map {
      margin-top: 8em;
+=======
+ .google-map {
+     margin-top: 45px;
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
      margin-bottom: 5em;
      display: flex;
      justify-content: center;
      align-content: center;
+<<<<<<< HEAD
      align-items: center;
  }
 
@@ -465,3 +578,6 @@ button:hover {
         font-size: 1em;
         clip: auto !important;
     }
+=======
+ }
+>>>>>>> 6f1e01b51bac09299586ce77bc8a1d387a8161c7
