@@ -9,9 +9,6 @@ body {
     font-family: 'Roboto';
 }
 
-html {
-    /*font-size: 62.5%;*/
-}
 
 .navigation {
     background-color: black;
@@ -336,9 +333,6 @@ button:focus {
     border: 2px solid var(--blue-light);
 }
 
-input:focus {
-    
-}
   
   textarea {
     width: 450px;
