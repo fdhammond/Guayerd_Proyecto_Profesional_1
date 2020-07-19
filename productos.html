@@ -47,9 +47,9 @@
                                 src="https://res.cloudinary.com/dzkqopnby/image/upload/v1594957034/guayerd_proyecto_1/bike_b0mquj.gif"
                                 alt="bike" onmouseover="moveElement(this)"></a><a href="index.html">Guayerd
                             Bikes</a></span></li>
-                <li onmouseover="moveElement(this)"><a href="index.html">HOME</a></li>
-                <li onmouseover="moveElement(this)"><a href="productos.html">PRODUCTOS</a></li>
-                <li onmouseover="moveElement(this)"><a href="contacto.html">CONTACTO</a></li>
+                <li onmouseover="moveElementAnchor(this)"><a href="index.html">HOME</a></li>
+                <li onmouseover="moveElementAnchor(this)"><a href="productos.html">PRODUCTOS</a></li>
+                <li onmouseover="moveElementAnchor(this)"><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </div>
@@ -74,6 +74,9 @@
                     asiento italiano Iscaselle. La bicicleta es ultra liviana hecha
                     especialmente para competir, tengo las punteras de los pedales y el
                     porta-botella original, podría llegar a cambiar por una MTB.</p>
+                <div class="button-class-producto">
+                    <a href="contacto.html"><button>Comprar</button></a>
+                </div>
             </div>
         </div>
 
@@ -83,7 +86,7 @@
                     alt="">
             </div>
             <div class="producto-texto">
-                <h3>Urbana Crossway 40</h3>
+                <h3>Varela Competicion Aluminio Rodado 28</h3>
                 <p>Bicicleta de competición hecha a medida con lo mejor, cuadro francés
                     Huret talle 'M', cambios y mecánica Shimano (shifters,
                     descarriladores), frenos Weinmann, ruedas Canestrari Super Sport
@@ -91,6 +94,9 @@
                     asiento italiano Iscaselle. La bicicleta es ultra liviana hecha
                     especialmente para competir, tengo las punteras de los pedales y el
                     porta-botella original, podría llegar a cambiar por una MTB.</p>
+                <div class="button-class-producto">
+                    <a href="contacto.html"><button>Comprar</button></a>
+                </div>
             </div>
         </div>
 
@@ -101,7 +107,7 @@
                     alt="">
             </div>
             <div class="producto-texto">
-                <h3>Urbana Crossway 40</h3>
+                <h3>Thanos Competicion Rodado 28</h3>
                 <p>Bicicleta de competición hecha a medida con lo mejor, cuadro francés
                     Huret talle 'M', cambios y mecánica Shimano (shifters,
                     descarriladores), frenos Weinmann, ruedas Canestrari Super Sport
@@ -109,6 +115,9 @@
                     asiento italiano Iscaselle. La bicicleta es ultra liviana hecha
                     especialmente para competir, tengo las punteras de los pedales y el
                     porta-botella original, podría llegar a cambiar por una MTB.</p>
+                <div class="button-class-producto">
+                    <a href="contacto.html"><button>Comprar</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -122,6 +131,18 @@
     </div>
 
     <script>
+
+        function moveElementAnchor(elem) {
+            // get all 'a' elements
+            var a = document.getElementsByTagName('a');
+            // loop through all 'a' elements
+            for (i = 0; i < a.length; i++) {
+
+            }
+            // add 'active' classs to the element that was clicked
+            elem.classList.add('animate__animated');
+            elem.classList.add('animate__bounceIn');
+        }
 
         function moveElement(elem) {
             // get all 'a' elements

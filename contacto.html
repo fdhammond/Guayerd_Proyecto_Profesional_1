@@ -47,19 +47,19 @@
                                 src="https://res.cloudinary.com/dzkqopnby/image/upload/v1594957034/guayerd_proyecto_1/bike_b0mquj.gif"
                                 alt="bike" onmouseover="moveElement(this)"></a><a href="index.html">Guayerd
                             Bikes</a></span></li>
-                <li onmouseover="moveElement(this)"><a href="index.html">HOME</a></li>
-                <li onmouseover="moveElement(this)"><a href="productos.html">PRODUCTOS</a></li>
-                <li onmouseover="moveElement(this)"><a href="contacto.html">CONTACTO</a></li>
+                <li onmouseover="moveElementAnchor(this)"><a href="index.html">HOME</a></li>
+                <li onmouseover="moveElementAnchor(this)"><a href="productos.html">PRODUCTOS</a></li>
+                <li onmouseover="moveElementAnchor(this)"><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </div>
 
     <div class="productos-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-        data-aos-delay="350" data-aos-duration="1000">
+        data-aos-delay="650" data-aos-duration="1000">
         <h2>CONTACTO</h2>
     </div>
 
-    <div class="container-form" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">
+    <div class="container-form" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1000">
 
 
         <form action="https://ptsv2.com/t/guayerd/post" method="POST">
@@ -74,6 +74,7 @@
             <input type="text" class="signup-text-  input border-customized-input" />
             <div class="select-style">
                 <select name="tema">
+                    <option value="compra">Compra</option>
                     <option value="venta">Venta</option>
                     <option value="reparacion">Reparacion</option>
                     <option value="trabajo">Trabajo</option>
@@ -81,7 +82,7 @@
                 </select>
             </div>
 
-            <textarea name="mensaje" placeholder="Comment..."></textarea>
+            <textarea name="mensaje" placeholder="Escribir consulta..."></textarea>
             <br />
             <br />
             <div class="button-class">
@@ -113,6 +114,18 @@
     </div>
 
     <script>
+
+        function moveElementAnchor(elem) {
+            // get all 'a' elements
+            var a = document.getElementsByTagName('a');
+            // loop through all 'a' elements
+            for (i = 0; i < a.length; i++) {
+
+            }
+            // add 'active' classs to the element that was clicked
+            elem.classList.add('animate__animated');
+            elem.classList.add('animate__bounceIn');
+        }
 
         function moveElement(elem) {
             // get all 'a' elements

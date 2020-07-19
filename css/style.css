@@ -2,19 +2,22 @@
     margin: 0;
     box-sizing: border-box;
     --blue-light: #0ed2f7;
+    --light-grey: #D3D3D3;
+    --black-color: #03071e;
 }
+
+:root {
+    -animate-duration: 3s;
+    -animate-delay: 0.9s;
+  }
 
 body {
     background-color: #F3F3F4;
     font-family: 'Roboto';
 }
 
-html {
-    /*font-size: 62.5%;*/
-}
-
 .navigation {
-    background-color: black;
+    background-color: var(--black-color);
     margin: 25px 25px;
 }
 
@@ -70,13 +73,7 @@ html {
      color: var(--blue-light);
 }
 
-.navigation nav ul li .productos-selected{
-    color: var(--blue-light);
-}
 
-.navigation nav ul li .contacto-selected{
-    color: var(--blue-light);
-}
 
 .navigation nav ul li:first-child {
     flex: 1;
@@ -117,7 +114,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: initial;
-    margin-left: 150px;
+    margin-left: 120px;
     margin-bottom: 450px;
     font-family: 'Josefin Sans', sans-serif;
     --animate-duration: 1s;
@@ -157,12 +154,13 @@ html {
     margin-top: 25px; 
     font-family: 'Roboto';
     font-size: 18px;
+    color: var(--black-color);
 }
 
 .home-info h3 {
-    font-size: 28px;
+    font-size: 28px; 
     margin: 2em 0 1em 0;
-    color: var(--blue-light); 
+    color: var(--blue-light);  
 }
 
 
@@ -191,16 +189,27 @@ table {
 
 .table-premio{
     width: 100%;  
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 8em;     
 }
 
+.table-premio th {
+    background-color: var(--blue-light);
+}
+
+.table-premio td:first-child:hover {
+    background-color: var(--blue-light);
+}
+
+.table-premio td:nth-child(2):hover {
+    background-color: lightgray;
+}
 
 .table-premio th, .table-premio td {
     text-align: left;
     padding: 0.5em 3em;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--light-grey);
 }
 
 
@@ -277,6 +286,7 @@ table {
 .producto-texto p {
     max-width: 400px;
     font-family: 'Roboto';
+    margin-top: 12px;
 }
 
 @media (max-width: 900px){
@@ -290,6 +300,35 @@ table {
 
 .producto-bottom {
     margin-bottom: 5em;
+}
+
+.button-class-producto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 18px;
+}
+
+.button-class-producto a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.button-class-producto button {
+    border-radius:15px;
+    background-color: white;
+    padding: 15px;
+    border: 0;
+    box-shadow: 6px 6px 4px rgba(0,0,0,0.06);
+}
+
+.button-class-producto button:hover {
+    background-color: var(--blue-light);
+    color: white;
+}
+
+.button-class-producto button a:hover {
+    color: white;
 }
 
 
@@ -335,10 +374,6 @@ button:focus {
     outline: none;
     border: 2px solid var(--blue-light);
 }
-
-input:focus {
-    
-}
   
   textarea {
     width: 450px;
@@ -357,6 +392,7 @@ input:focus {
   .select-style {
       margin: 25px 0;
   }
+
 
   /* Google Map */
 
@@ -393,7 +429,7 @@ input:focus {
     box-shadow: 6px 6px 4px rgba(0,0,0,0.06);
 }
 
-button:hover {
+.button-class button:hover {
     background-color: var(--blue-light);
     color: white;
 }
@@ -471,3 +507,5 @@ button:hover {
         font-size: 1em;
         clip: auto !important;
     }
+
+    /* Guayerd Title */
