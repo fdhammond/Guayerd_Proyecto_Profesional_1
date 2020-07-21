@@ -343,7 +343,7 @@ table {
     margin-top: 70px;
   }
   
-  input[type=text] {
+  input[type=text], input[type=email]{
     padding: 10px;
     margin: 10px 0;
     border: 0;
@@ -352,7 +352,7 @@ table {
   
   form select {
     padding:  10px;
-    padding:15px;
+    padding: 15px;
     border-radius:15px;
     border:0;
     box-shadow: 6px 6px 4px rgba(0,0,0,0.06);
@@ -368,9 +368,9 @@ table {
      border-radius:10px;
   }
   input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+  select:focus,
+  textarea:focus,
+  button:focus {
     outline: none;
     border: 2px solid var(--blue-light);
 }
@@ -507,5 +507,3 @@ button:focus {
         font-size: 1em;
         clip: auto !important;
     }
-
-    /* Guayerd Title */
